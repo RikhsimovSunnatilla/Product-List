@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mahsulotlar ro'yxati</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <h1 class="text-center mt-3 mb-4">Mahsulotlar ro'yxati</h1>
+
+        <form class="checkForm form-group mb-4 mx-auto">
+            <div class="input-group">
+                <input type="search" class="checkInput form-control" placeholder="Mahsulotni nomi bo'yicha qidirish" title="" autocomplete="off" required>
+                <div class="input-group-append">
+                    <button type="submit" class="checkBtn btn btn-primary text-nowrap" title="Qidirish"><i class="fas fa-search"></i></button>
+                </div>
+            </div>
+        </form>
+
+        <form class="addProductForm form-group d-flex align-items-center my-5 mx-auto">
+            <input type="text" class="addProductInput w-50 form-control mr-4" pattern="[a-zA-Z0-9]+" name="productName" placeholder="Mahsulot nomi" autocomplete="off" required>
+            <div class="input-group w-25 mr-4">
+                <input type="number" class="addQuantInput form-control" name="productQuant" placeholder="Miqdori" autocomplete="off" required>
+                <div class="input-group-append">
+                    <span class="input-group-text">kg/ta</span>
+                </div>
+            </div>
+            <div class="input-group w-25 mr-4">
+                <input type="number" class="addPriceInput form-control" name="productPrice" placeholder="Narxi" autocomplete="off" required>
+                <div class="input-group-append">
+                    <span class="input-group-text">so'm</span>
+                </div>
+            </div>
+            <button type="submit" class="addProductBtn btn btn-success text-nowrap"><i class="fas fa-plus mr-1"></i> Mahsulot qo'shish</button>
+        </form>
+
+        <table class="table table-striped mw-100 overflow-hidden mb-5">
+            <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col" class="w-25">NOMI</th>
+                    <th scope="col">MIQDORI (kg/ta)</th>
+                    <th scope="col">NARXI (so'm)</th>
+                    <th scope="col">UMUMIY NARXI</th>
+                    <th scope="col"></th>
+                </tr>
+            </thead>
+            <tbody class="tbody">
+                <tr class="empty">
+                    <th scope="row">1</th>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr class="empty">
+                    <th scope="row">2</th>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr class="empty">
+                    <th scope="row">3</th>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr class="empty">
+                    <th scope="row">4</th>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr class="empty">
+                    <th scope="row">5</th>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
+
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="js/script.js"></script>
+    
+</body>
+</html>
